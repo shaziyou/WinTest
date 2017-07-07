@@ -29,6 +29,8 @@ public class TestMain {
 		http.setPort(80);
 		http.setPath("/");
 		http.setMethod("GET");
+		http.setUseKeepAlive(true);
+		http.setFollowRedirects(true);
 
 		LoopController loop = new LoopController();
 		loop.setFirst(true);
